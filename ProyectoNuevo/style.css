@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=DM+Serif+Display&family=Raleway&display=swap');
+:root{
+    --color-letra-texto: #8ecae6;
+    --color-letra-titulo: #212529;
+    --color-fondo: #ececec;
+    --color-busqueda: #fff;
+    --color-secundario: #feb371;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 62.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #FB924E 20%, var(--color-secundario) 80%);
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    position: relative;
+}
+
+.title p{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+h3,.adorno{
+    font-family: 'Alexandria', sans-serif;
+    position: relative;
+}
+
+.adorno:before, h3:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f79b2b, #ffbe0b);
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    max-width: 10rem;
+    height: auto;
+}
+
+.buscador{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    font-size: 2rem;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.bienvenida{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    width: 50%;
+}
+
+.title{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    display: flex;
+    justify-items: left;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: left;
+    margin: 1.5rem;
+    max-width: auto;
+    font-size: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+	justify-content: space-around;
+    margin: 1rem;
+}
+
+.recetario{
+    color: var(--color-letra-titulo);
+    background-color: var(--color-busqueda);
+    font-size: 2rem;
+    height: 100%;
+    display: flex; 
+    flex-direction: column; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: left; /*Alinear los elementos*/
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.populares{
+    text-align: left;
+    font-size: 2.3rem;
+    padding: 1rem;
+    display: flex; 
+    flex-direction: row; /*Darle dirección a los elementos*/
+    justify-content: left;
+    align-items: center;
+}
+
+.recetario-cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1%;
+}
+
+.dataContainer {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	
+	text-align: left;
+	padding: .5rem;
+	align-items: left;
+    justify-content: space-around;
+}
+
+.dataContainer img {
+	max-width: 11rem;
+	max-height: 11rem;
+    margin: 1rem;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    text-align: left;
+    margin: 1rem;
+    max-width: min-content;
+}
+
+/*--------------------------*/
+
+
+
